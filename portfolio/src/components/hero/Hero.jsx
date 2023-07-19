@@ -4,14 +4,18 @@ import image from '../../assets/div.jpeg'
 const Hero = () => {
   const { social } = useGlobalContext()
   return (
-    <section className='mx-4 my-20 md:mx-16 '>
+    <section className='mx-4 mt-20 md:mx-16 '>
       <div className='flex justify-between lg:gap-16 md:gap-8 '>
         <ul className='hidden md:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
           {social.map((link) => {
             const { id, url, icon } = link
             return (
-              <li key={id} className=' '>
-                <a href={url} className='text-red-500 text-3xl '>
+              <li key={id} className='hover:animate-bounce hover:rotate-45 '>
+                <a
+                  href={url}
+                  target='_blank'
+                  className='text-red-500 text-2xl '
+                >
                   {icon}
                 </a>
               </li>
@@ -37,8 +41,12 @@ const Hero = () => {
               {social.map((link) => {
                 const { id, url, icon } = link
                 return (
-                  <li key={id} className=' '>
-                    <a href={url} className='text-red-500 text-2xl '>
+                  <li key={id} className=' hover:rotate-90'>
+                    <a
+                      href={url}
+                      target='_blank'
+                      className='text-red-500 text-2xl '
+                    >
                       {icon}
                     </a>
                   </li>
