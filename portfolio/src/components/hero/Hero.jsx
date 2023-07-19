@@ -1,5 +1,6 @@
 import React from 'react'
 import { useGlobalContext } from '../../hooks/context'
+import { FaRegPaperPlane } from 'react-icons/fa'
 import image from '../../assets/div.jpeg'
 const Hero = () => {
   const { social } = useGlobalContext()
@@ -27,14 +28,14 @@ const Hero = () => {
             <h1 className='text-5xl'>Hi,I am Divine</h1>
             <h3 className='text-3xl'>Frontend developer</h3>
             <p className='text-md'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
-              quisquam aspernatur molestiae earum, ut animi fugiat sapiente
-              cupiditate assumenda, repellendus tenetur! Vitae doloremque ea,
-              nesciunt labore dolore facere quidem illo! Tempore suscipit
-              nostrum nam eos culpa quaerat, dignissimos veniam consequuntur
-              saepe explicabo corporis quasi reprehenderit obcaecati cupiditate
-              perferendis, optio nobis!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+              harum perspiciatis et minima rerum facilis quia. Possimus
+              praesentium laudantium vitae dolor nisi harum quia porro quaerat
+              doloribus. Aperiam, voluptate ipsa.
             </p>
+            <button className='p-4 mt-4 items-center rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-blue-300 w-[150px]'>
+              contact me <FaRegPaperPlane />
+            </button>
           </article>
           <div className='flex lg:w-[40%] w-[100%] justify-center '>
             <ul className='md:hidden  flex  absolute left-4  top-16 sm:top-28  gap-4 flex-col  '>
@@ -56,7 +57,7 @@ const Hero = () => {
             <div
               className=' rounded-b-full  rounded-t-full h-[170px] w-[170px]
               sm:h-[180px] sm:w-[180px]
-            md:h-[240px] md:w-[240px]   bg-hero lg:h-[300px] lg:w-[300px] xl:h-[350px] xl:w-[350px] bg-center bg-cover'
+            md:h-[240px] md:w-[240px]   bg-hero lg:h-[300px] lg:w-[300px] xl:h-[320px] xl:w-[320px] bg-center bg-cover'
             >
               {/* <img className='' src={image} alt='' /> */}
             </div>
