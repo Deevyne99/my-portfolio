@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 
 const ProgressBar = () => {
   return (
-    <div className='flex flex-col max-w-xs'>
+    <div className='flex flex-col w-[90%]'>
       <div className='flex  justify-between'>
         <p>name</p>
         <p>level</p>

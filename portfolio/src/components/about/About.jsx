@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <button className='p-4  items-center sm:mr-auto rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-blue-300 w-[150px]'>
+            <button className='p-4  items-center sm:mr-auto rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-[#635FC7] w-[150px]'>
               contact me <FaRegPaperPlane />
             </button>
           </div>

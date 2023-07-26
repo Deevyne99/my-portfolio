@@ -2,9 +2,11 @@ import { createContext, useContext, useReducer } from 'react'
 import reducer from './reducer'
 import { links } from '../data'
 import { social } from '../data'
+import { skills } from '../data'
 const initialState = {
   links: links,
   social: social,
+  skills: skills,
 }
 
 const AppContext = createContext()
