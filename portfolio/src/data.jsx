@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export const links = [
@@ -57,5 +57,63 @@ export const social = [
     name: 'linkedin',
     url: 'https://www.linkedin.com/in/deevyne99/',
     icon: <FaLinkedin />,
+  },
+]
+
+export const skills = [
+  {
+    id: 1,
+    frontend: [
+      {
+        id: 1,
+        skill: 'Html',
+        level: 90,
+      },
+      {
+        id: 2,
+        skill: 'Css',
+        level: 90,
+      },
+      {
+        id: 3,
+        skill: 'Javascript',
+        level: 90,
+      },
+      {
+        id: 2,
+        skill: 'React',
+        level: 90,
+      },
+      {
+        id: 2,
+        skill: 'Tailwind Css',
+        level: 90,
+      },
+    ],
+  },
+  {
+    id: 2,
+    backend: [
+      {
+        id: 1,
+        skill: 'Node js',
+        level: 60,
+      },
+      {
+        id: 2,
+        skill: 'Express js',
+        level: 60,
+      },
+      {
+        id: 3,
+        skill: 'Mongo DB',
+        level: 60,
+      },
+      {
+        id: 4,
+        skill: 'Postman',
+        level: 60,
+      },
+    ],
   },
 ]
