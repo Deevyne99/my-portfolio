@@ -80,12 +80,12 @@ export const skills = [
         level: 90,
       },
       {
-        id: 2,
+        id: 3,
         skill: 'React',
         level: 90,
       },
       {
-        id: 2,
+        id: 4,
         skill: 'Tailwind Css',
         level: 90,
       },
