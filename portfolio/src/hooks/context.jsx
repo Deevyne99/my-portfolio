@@ -3,10 +3,12 @@ import reducer from './reducer'
 import { links } from '../data'
 import { social } from '../data'
 import { skills } from '../data'
+import { portfolio } from '../data'
 const initialState = {
   links: links,
   social: social,
   skills: skills,
+  portfolio,
 }
 
 const AppContext = createContext()

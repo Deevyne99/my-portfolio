@@ -86,15 +86,15 @@ export const skills = [
       {
         id: 3,
         skill: 'Javascript',
-        level: 90,
+        level: 85,
       },
       {
-        id: 3,
+        id: 4,
         skill: 'React',
         level: 90,
       },
       {
-        id: 4,
+        id: 5,
         skill: 'Tailwind Css',
         level: 90,
       },
@@ -113,23 +113,58 @@ export const skills = [
       {
         id: 2,
         skill: 'Express js',
-        level: 60,
+        level: 70,
       },
       {
         id: 3,
         skill: 'Mongo DB',
-        level: 60,
+        level: 50,
       },
       {
         id: 4,
         skill: 'Postman',
-        level: 60,
+        level: 80,
       },
       {
         id: 5,
         skill: 'Postman',
-        level: 60,
+        level: 70,
       },
     ],
+  },
+]
+
+export const portfolio = [
+  {
+    id: 1,
+    title: 'Country API',
+    image: './assets/country-api.png',
+    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    url: 'https://delightful-marigold-c5f6b1.netlify.app/',
+    git: 'https://github.com/Deevyne99/country-api',
+  },
+  {
+    id: 2,
+    title: 'Audiophoile Ecommerce',
+    image: './assets/audiophoile.png',
+    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    url: 'https://loquacious-buttercream-b05131.netlify.app',
+    git: 'https://github.com/Deevyne99/audiophile-Ecommerce',
+  },
+  {
+    id: 3,
+    title: 'myteam Multipage',
+    image: './assets/multipage.png',
+    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    url: 'https://magnificent-starship-ff5be4.netlify.app/',
+    git: 'https://github.com/Deevyne99/myTeam-multipage',
+  },
+  {
+    id: 4,
+    title: 'Task Management',
+    image: './assets/multipage.png',
+    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    url: 'https://ubiquitous-truffle-d84ec3.netlify.app',
+    git: 'https://github.com/Deevyne99/NUPAT-TASK-2',
   },
 ]
