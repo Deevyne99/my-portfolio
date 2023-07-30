@@ -1,4 +1,5 @@
 // import React from 'react'
+// import image from '../src/assets/task.png'
 import {
   FaGithub,
   FaInstagram,
@@ -138,7 +139,7 @@ export const portfolio = [
   {
     id: 1,
     title: 'Country API',
-    image: './assets/country-api.png',
+    image: '../src/assets/country-api.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
     url: 'https://delightful-marigold-c5f6b1.netlify.app/',
     git: 'https://github.com/Deevyne99/country-api',
@@ -146,7 +147,7 @@ export const portfolio = [
   {
     id: 2,
     title: 'Audiophoile Ecommerce',
-    image: './assets/audiophoile.png',
+    image: '../src/assets/audiophoile.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
     url: 'https://loquacious-buttercream-b05131.netlify.app',
     git: 'https://github.com/Deevyne99/audiophile-Ecommerce',
@@ -154,7 +155,7 @@ export const portfolio = [
   {
     id: 3,
     title: 'myteam Multipage',
-    image: './assets/multipage.png',
+    image: '../src/assets/multipage.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
     url: 'https://magnificent-starship-ff5be4.netlify.app/',
     git: 'https://github.com/Deevyne99/myTeam-multipage',
@@ -162,7 +163,7 @@ export const portfolio = [
   {
     id: 4,
     title: 'Task Management',
-    image: './assets/multipage.png',
+    image: '../src/assets/task.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
     url: 'https://ubiquitous-truffle-d84ec3.netlify.app',
     git: 'https://github.com/Deevyne99/NUPAT-TASK-2',
