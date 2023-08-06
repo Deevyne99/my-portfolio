@@ -4,7 +4,7 @@ const Portfolio = () => {
   const { portfolio, portfolioIndex, nextEvent, prevEvent } = useGlobalContext()
   console.log(portfolio)
   return (
-    <section className='my-24 mx-8 md:mx-16 lg:mx-24'>
+    <section className='my-28 mx-8 md:mx-16 lg:mx-24'>
       <div className='flex flex-col justify-center items-center relative'>
         <h2 className='md:text-5xl text-3xl'>Portfolio</h2>
         <p className='mt-4 sm:text-2xl text-lg capitalize'>my recent works</p>
