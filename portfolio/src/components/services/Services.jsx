@@ -10,13 +10,13 @@ const Services = () => {
         <h1 className='md:text-5xl text-3xl'>Services</h1>
         <h3 className='mt-4 sm:text-2xl text-lg capitalize'>what i offer</h3>
       </div>
-      <article className='flex justify-center gap-16 mt-16'>
+      <article className='flex md:flex-row flex-col justify-center gap-16 mt-16'>
         {services.map((item) => {
           const { id, position, icon, services } = item
           return (
             <div
               key={id}
-              className='flex flex-col w-1/5 shadow-xl rounded-md  p-4'
+              className='flex flex-col w-3/4 mx-auto md:mx-0 md:w-1/2 lg:w-1/4 shadow-xl rounded-md  p-4'
             >
               <div className='mt-16 text-2xl text-[#635FC7] animate-bounce'>
                 {icon}
