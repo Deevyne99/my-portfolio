@@ -2,7 +2,7 @@ import { useGlobalContext } from '../../hooks/context'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 const Portfolio = () => {
   const { portfolio, portfolioIndex, nextEvent, prevEvent } = useGlobalContext()
-  console.log(portfolio)
+  // console.log(portfolio)
   return (
     <section className='my-28 mx-8 md:mx-16 lg:mx-24'>
       <div className='flex flex-col justify-center items-center relative'>

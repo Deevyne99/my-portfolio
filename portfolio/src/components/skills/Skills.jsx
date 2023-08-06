@@ -13,7 +13,7 @@ const Skills = () => {
         </h3>
         <article className='flex sm:flex-row flex-col gap-10 md:gap-8 lg:gap-12 justify-center items-center  md:mx-16 lg:mx-20 xl:mx-24 mt-8 mx-4 '>
           {skills.map((item) => {
-            console.log(item)
+            // console.log(item)
             const { id, skill, levels, icon } = item
             return (
               <div

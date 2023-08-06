@@ -6,7 +6,7 @@ const ProgressBar = ({ skill, level }) => {
       <div className='flex  justify-between'>
         <p>{skill}</p>
         <p>{level}%</p>
-        {console.log(typeof level)}
+        {/* {console.log(typeof level)} */}
       </div>
       <div className='mt-2  w-full h-2 bg-[#d0cfee] rounded-md'>
         <div

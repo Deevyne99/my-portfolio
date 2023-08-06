@@ -169,3 +169,30 @@ export const portfolio = [
     git: 'https://github.com/Deevyne99/NUPAT-TASK-2',
   },
 ]
+
+export const services = [
+  {
+    id: 1,
+    position: 'frontend developer',
+    services: [
+      'User Interface (UI) Development',
+      'Responsive Web Design',
+      'Interactive Elements',
+      'Performance Optimization',
+      'Cross-Browser Compatibility',
+    ],
+    icon: <FaCode />,
+  },
+  {
+    id: 2,
+    position: 'frontend developer',
+    icon: <FaDatabase />,
+    services: [
+      'User Interface (UI) Development',
+      'Responsive Web Design',
+      'Interactive Elements',
+      'Performance Optimization',
+      'Cross-Browser Compatibility',
+    ],
+  },
+]

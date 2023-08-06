@@ -3,12 +3,13 @@ import reducer from './reducer'
 import { links } from '../data'
 import { social } from '../data'
 import { skills } from '../data'
-import { portfolio } from '../data'
+import { portfolio, services } from '../data'
 const initialState = {
   links: links,
   social: social,
   skills: skills,
   portfolio,
+  services,
   portfolioIndex: 0,
 }
 const lastIndex = portfolio.length - 1
