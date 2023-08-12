@@ -1,8 +1,10 @@
 // import React from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import { useGlobalContext } from '../../hooks/context'
+import Modal from '../modal/Modal'
+
 const Services = () => {
-  const { services } = useGlobalContext()
+  const { services, isModalOpen } = useGlobalContext()
   // console.log(services)
   return (
     <section className='my-24 mx-4 lg:mx-24 md:mx-16'>
@@ -10,9 +12,10 @@ const Services = () => {
         <h1 className='md:text-5xl text-3xl'>Services</h1>
         <h3 className='mt-4 sm:text-2xl text-lg capitalize'>what i offer</h3>
       </div>
+      {isModalOpen && <Modal />}
       <article className='flex md:flex-row flex-col justify-center gap-16 mt-16'>
         {services.map((item) => {
-          const { id, position, icon, services } = item
+          const { id, position, icon } = item
           return (
             <div
               key={id}
@@ -25,6 +28,7 @@ const Services = () => {
               <button className='mt-8 capitalize w-[100px] flex items-center gap-2 text-[#635FC7]'>
                 view more <FaArrowRightLong />
               </button>
+              {console.log(services)}
             </div>
           )
         })}

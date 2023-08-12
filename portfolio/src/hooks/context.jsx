@@ -3,7 +3,7 @@ import reducer from './reducer'
 import { links } from '../data'
 import { social } from '../data'
 import { skills } from '../data'
-import { portfolio, services } from '../data'
+import { portfolio, services, expert } from '../data'
 const initialState = {
   links: links,
   social: social,
@@ -11,6 +11,8 @@ const initialState = {
   portfolio,
   services,
   portfolioIndex: 0,
+  isModalOpen: true,
+  expert,
 }
 const lastIndex = portfolio.length - 1
 const AppContext = createContext()

@@ -174,25 +174,34 @@ export const services = [
   {
     id: 1,
     position: 'frontend developer',
-    services: [
-      'User Interface (UI) Development',
-      'Responsive Web Design',
-      'Interactive Elements',
-      'Performance Optimization',
-      'Cross-Browser Compatibility',
-    ],
     icon: <FaCode />,
   },
   {
     id: 2,
     position: 'frontend developer',
     icon: <FaDatabase />,
-    services: [
+  },
+]
+
+export const expert = [
+  {
+    id: 1,
+    service: [
       'User Interface (UI) Development',
       'Responsive Web Design',
       'Interactive Elements',
       'Performance Optimization',
       'Cross-Browser Compatibility',
+    ],
+  },
+  {
+    id: 2,
+    service: [
+      'User Interface (UI) Development',
+      'Responsive Web Design',
+      'Interactive Elements',
+      'Performance Optimization',
+      'Cross-Browser ',
     ],
   },
 ]
