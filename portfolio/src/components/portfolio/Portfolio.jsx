@@ -8,7 +8,7 @@ const Portfolio = () => {
       <div className='flex flex-col justify-center items-center relative'>
         <h2 className='md:text-5xl text-3xl'>Portfolio</h2>
         <p className='mt-4 sm:text-2xl text-lg capitalize'>my recent works</p>
-        <article className='flex relative w-full overflow-hidden  mx-auto h-[450px] sm:h-[500px] md:h-[350px]'>
+        <article className='flex relative w-full overflow-hidden  mx-auto h-[430px] sm:h-[500px] md:h-[250px] '>
           {portfolio.map((item, index) => {
             const { id, url, title, image, git, desc } = item
             let position = 'nextSlide'
@@ -51,7 +51,7 @@ const Portfolio = () => {
                 <article className='flex flex-col md:w-[40%] w-full text-center md:text-left tracking-wide leading-6 text-sm'>
                   {desc}
 
-                  <div className='flex gap-4 mt-6 justify-center md:justify-start'>
+                  <div className='flex gap-4 mt-3 justify-center md:justify-start'>
                     <a
                       href={url}
                       className='text-white p-2 text-center rounded-md bg-[#635FC7] w-[100px]'
@@ -74,13 +74,13 @@ const Portfolio = () => {
         </article>
 
         <button
-          className='text-[#635FC7] hidden md:flex  top-[40%] sm:top-[90%] md:top-[30%] absolute left-0  lg:top-[50%] text-3xl '
+          className='text-[#635FC7] hidden md:flex  top-[40%] sm:top-[90%] md:top-[50%] absolute left-0  lg:top-[65%] text-3xl '
           onClick={() => prevEvent()}
         >
           {<FaChevronLeft />}
         </button>
         <button
-          className='text-[#635FC7] hidden md:flex top-[40%]  sm:top-[90%] absolute md:top-[30%] lg:top-[50%] right-0 text-3xl'
+          className='text-[#635FC7] hidden md:flex top-[40%]  sm:top-[90%] absolute md:top-[50%] lg:top-[65%] right-0 text-3xl'
           onClick={() => nextEvent()}
         >
           {<FaChevronRight />}
