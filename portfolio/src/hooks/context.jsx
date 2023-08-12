@@ -11,8 +11,8 @@ const initialState = {
   portfolio,
   services,
   portfolioIndex: 0,
-  isModalOpen: true,
-  expert,
+  isModalOpen: false,
+  expert: [],
 }
 const lastIndex = portfolio.length - 1
 const AppContext = createContext()
@@ -24,6 +24,12 @@ const AppProvider = ({ children }) => {
   const prevEvent = () => {
     dispatch({ type: 'PREV_SLIDE' })
   }
+  const openModal = (id) => {
+    dispatch({ type: 'DISPLAY_MODAL', payload: { id, expert } })
+  }
+  const closeModal = () => {
+    dispatch({ type: 'CLOSE_MODAL' })
+  }
   useEffect(() => {
     dispatch({ type: 'SET_SLIDE', payload: lastIndex })
   }, [state.portfolioIndex, state.portfolio])
@@ -34,7 +40,9 @@ const AppProvider = ({ children }) => {
     return () => clearInterval(slider)
   }, [state.portfolioIndex])
   return (
-    <AppContext.Provider value={{ ...state, nextEvent, prevEvent }}>
+    <AppContext.Provider
+      value={{ ...state, nextEvent, prevEvent, openModal, closeModal }}
+    >
       {children}
     </AppContext.Provider>
   )

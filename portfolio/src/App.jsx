@@ -8,7 +8,7 @@ import Services from './components/services/Services'
 
 const App = () => {
   return (
-    <div>
+    <div className='relative'>
       <Navbar />
       <Hero />
       <About />
