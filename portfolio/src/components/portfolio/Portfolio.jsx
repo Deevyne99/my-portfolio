@@ -4,11 +4,11 @@ const Portfolio = () => {
   const { portfolio, portfolioIndex, nextEvent, prevEvent } = useGlobalContext()
   // console.log(portfolio)
   return (
-    <section className='my-28 mx-8 md:mx-16 lg:mx-24'>
+    <section className='md:my-28 my-20 mx-8 md:mx-16 lg:mx-24'>
       <div className='flex flex-col justify-center items-center relative'>
         <h2 className='md:text-5xl text-3xl'>Portfolio</h2>
         <p className='mt-4 sm:text-2xl text-lg capitalize'>my recent works</p>
-        <article className='flex relative w-full overflow-hidden  mx-auto h-[430px] sm:h-[500px] md:h-[250px] '>
+        <article className='flex relative w-full overflow-hidden  mx-auto h-[425px] sm:h-[500px] md:h-[250px] bg-red-50'>
           {portfolio.map((item, index) => {
             const { id, url, title, image, git, desc } = item
             let position = 'nextSlide'
