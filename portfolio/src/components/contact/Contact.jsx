@@ -4,7 +4,7 @@ import { FiMapPin } from 'react-icons/fi'
 import { FaRegPaperPlane } from 'react-icons/fa'
 const Contact = () => {
   return (
-    <section className='md:my-24 my-16 mx-4 md:mx-16 lg:mx-24'>
+    <section className='md:my-24 lg:my-28 my-16 mx-4 md:mx-16 lg:mx-24 bg-[#fdfdfd]'>
       <div className='text-center'>
         <h1 className='md:text-5xl text-3xl capitalize'>Contact me</h1>
         <h3 className='mt-4 sm:text-2xl text-lg capitalize'>Get in touch</h3>
