@@ -5,7 +5,7 @@ import { FaRegPaperPlane } from 'react-icons/fa'
 const Hero = () => {
   const { social } = useGlobalContext()
   return (
-    <section className='mx-4 mt-20 md:mx-16 sm:mx-4'>
+    <section className='mx-4 mt-20 md:mx-16 sm:mx-4 bg-[#fdfdfd]'>
       <div className='flex justify-between lg:gap-16 sm:gap-8 '>
         <ul className='hidden sm:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
           {social.map((link) => {

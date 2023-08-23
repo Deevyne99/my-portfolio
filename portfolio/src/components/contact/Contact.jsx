@@ -1,6 +1,7 @@
 import { BiPhoneCall, BiEnvelope } from 'react-icons/bi'
 import { BsEnvelopeAt } from 'react-icons/bs'
 import { FiMapPin } from 'react-icons/fi'
+import { FaRegPaperPlane } from 'react-icons/fa'
 const Contact = () => {
   return (
     <section className='md:my-24 my-16 mx-4 md:mx-16 lg:mx-24'>
@@ -66,6 +67,10 @@ const Contact = () => {
               placeholder='message'
             ></textarea>
           </div>
+          <button className='p-4 mt-4 items-center rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-[#635FC7] w-[200px] mx-auto sm:mx-0 '>
+            send message
+            <FaRegPaperPlane />
+          </button>
         </form>
       </div>
     </section>
