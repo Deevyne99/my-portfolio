@@ -12,6 +12,7 @@ const initialState = {
   services,
   portfolioIndex: 0,
   isModalOpen: false,
+  darkMode: false,
   expert: [],
 }
 const lastIndex = portfolio.length - 1
@@ -30,6 +31,9 @@ const AppProvider = ({ children }) => {
   const closeModal = () => {
     dispatch({ type: 'CLOSE_MODAL' })
   }
+  const toggleDarkMode = () => {
+    dispatch({ type: 'TOGGLE_DARK_MODE' })
+  }
   useEffect(() => {
     dispatch({ type: 'SET_SLIDE', payload: lastIndex })
   }, [state.portfolioIndex, state.portfolio])
@@ -41,7 +45,14 @@ const AppProvider = ({ children }) => {
   }, [state.portfolioIndex])
   return (
     <AppContext.Provider
-      value={{ ...state, nextEvent, prevEvent, openModal, closeModal }}
+      value={{
+        ...state,
+        nextEvent,
+        prevEvent,
+        openModal,
+        closeModal,
+        toggleDarkMode,
+      }}
     >
       {children}
     </AppContext.Provider>

@@ -2,9 +2,12 @@ import { BiPhoneCall, BiEnvelope } from 'react-icons/bi'
 import { BsEnvelopeAt } from 'react-icons/bs'
 import { FiMapPin } from 'react-icons/fi'
 import { FaRegPaperPlane } from 'react-icons/fa'
+import { useGlobalContext } from '../../hooks/context'
+
 const Contact = () => {
+  const { darkMode } = useGlobalContext()
   return (
-    <section className='md:my-24 lg:my-28 my-16 mx-4 md:mx-16 lg:mx-24 bg-[#fdfdfd]'>
+    <section className='md:my-24 lg:my-28 my-16 mx-4 md:mx-16 lg:mx-24 '>
       <div className='text-center'>
         <h1 className='md:text-5xl text-3xl capitalize'>Contact me</h1>
         <h3 className='mt-4 sm:text-2xl text-lg capitalize'>Get in touch</h3>
@@ -38,12 +41,16 @@ const Contact = () => {
           <div className='flex md:flex-row flex-col justify-between w-full md:gap-8 gap-4'>
             <input
               type='text'
-              className='bg-[#f4f7fd] p-2 md:w-1/2 w-full'
+              className={`${
+                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+              } p-2 md:w-1/2 w-full`}
               placeholder='Name'
             />
             <input
-              type='text'
-              className='bg-[#f4f7fd] p-2 md:w-1/2 w-full'
+              type='email'
+              className={`${
+                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+              } p-2 md:w-1/2 w-full`}
               placeholder='Email'
             />
           </div>
@@ -53,7 +60,9 @@ const Contact = () => {
               id=''
               cols='30'
               rows='4'
-              className='bg-[#f4f7fd] p-2 w-full'
+              className={`${
+                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+              } p-2 w-full`}
               placeholder='Project'
             ></textarea>
           </div>
@@ -63,7 +72,9 @@ const Contact = () => {
               id=''
               cols='30'
               rows='4'
-              className='w-full bg-[#f4f7fd] p-2'
+              className={`${
+                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+              } p-2 w-full`}
               placeholder='message'
             ></textarea>
           </div>

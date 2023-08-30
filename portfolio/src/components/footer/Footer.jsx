@@ -1,11 +1,3 @@
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaDatabase,
-  FaCode,
-} from 'react-icons/fa'
 import { social } from '../../data'
 const Footer = () => {
   return (

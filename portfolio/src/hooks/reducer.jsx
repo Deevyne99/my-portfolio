@@ -28,7 +28,9 @@ const reducer = (state, action) => {
   if (action.type === 'CLOSE_MODAL') {
     return { ...state, isModalOpen: false }
   }
-
+  if (action.type === 'TOGGLE_DARK_MODE') {
+    return { ...state, darkMode: !state.darkMode }
+  }
   throw new Error(`no action ${action.type}`)
 }
 export default reducer

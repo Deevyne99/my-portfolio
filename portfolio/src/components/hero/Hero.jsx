@@ -5,8 +5,8 @@ import { FaRegPaperPlane } from 'react-icons/fa'
 const Hero = () => {
   const { social } = useGlobalContext()
   return (
-    <section className='mx-4 mt-20 md:mx-16 sm:mx-4 bg-[#fdfdfd]'>
-      <div className='flex justify-between lg:gap-16 sm:gap-8 '>
+    <section className='mx-4   md:mx-16 sm:mx-4 '>
+      <div className='flex sm:my-12 justify-between lg:gap-16 sm:gap-8 '>
         <ul className='hidden sm:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
           {social.map((link) => {
             const { id, url, icon } = link
@@ -23,7 +23,7 @@ const Hero = () => {
             )
           })}
         </ul>
-        <div className='flex flex-col-reverse sm:flex-row items-center lg:justify-between justify-center mx-auto bg-red-30   w-full  '>
+        <div className='flex my-8 flex-col-reverse sm:flex-row items-center lg:justify-between justify-center mx-auto bg-red-30   w-full  '>
           <article className='flex flex-col gap-4 sm:gap-4 w-[100%] lg:w-[45%] '>
             <h1 className='lg:text-5xl mt-3 tracking-wide leading-6 sm:mt-0 text-center sm:text-left text-3xl sm:text-3xl'>
               Hi,I am Divine

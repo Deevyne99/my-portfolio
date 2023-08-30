@@ -7,7 +7,7 @@ const Modal = () => {
   const { expert, closeModal } = useGlobalContext()
 
   return (
-    <div className='w-lg rounded-md flex-col absolute justify-center items-center flex top-[50%] md:top-[55%] left-0 right-0 mx-auto my-auto z-200 bg-white w-[280px] xs:w-[300px] sm:w-[450px] p-4 pb-12 gap-4 '>
+    <div className='w-lg rounded-md flex-col absolute justify-center items-center flex top-[50%] sm:top-[40%] md:top-[50%] lg:top-[50%] left-0 right-0 mx-auto my-auto z-200 bg-[#fff] w-[280px] xs:w-[300px] sm:w-[450px] p-4 pb-12 gap-4 '>
       <button
         className='ml-auto text-2xl text-[#635FC7]'
         onClick={() => closeModal()}

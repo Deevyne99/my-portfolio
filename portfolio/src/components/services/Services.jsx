@@ -4,10 +4,10 @@ import { useGlobalContext } from '../../hooks/context'
 import Modal from '../modal/Modal'
 
 const Services = () => {
-  const { services, isModalOpen, openModal } = useGlobalContext()
+  const { services, isModalOpen, openModal, darkMode } = useGlobalContext()
   // console.log(services)
   return (
-    <section className='my-24 mx-4 lg:mx-24 md:mx-16 bg-[#fdfdfd]'>
+    <section className='my-24 mx-4 lg:mx-24 md:mx-16 '>
       {isModalOpen && (
         <div className='fixed lg:absolute bg-[rgb(0,0,0)] top-0 left-0 w-full  h-full bg-opacity-50'></div>
       )}
@@ -24,7 +24,9 @@ const Services = () => {
           return (
             <div
               key={id}
-              className='flex flex-col w-3/4 mx-auto md:mx-0 md:w-1/2 lg:w-1/4 shadow-xl rounded-md  p-4'
+              className={`flex flex-col w-3/4 mx-auto md:mx-0 md:w-1/2 lg:w-1/4 shadow-xl rounded-md  p-4 ${
+                darkMode ? 'bg-[#00162c]' : 'bg-[#fff]'
+              }`}
             >
               <div
                 className={`mt-16 text-2xl text-[#635FC7] animate-bounce ${
