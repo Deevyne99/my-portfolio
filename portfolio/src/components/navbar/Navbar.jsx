@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header
       className={`sm:flex z-10 top-0 left-0 right-0  hidden py-4 shadow-lg ${
-        darkMode ? 'bg-[#00162c]' : ' bg-white'
+        darkMode === 'dark' ? 'bg-[#00162c]' : ' bg-white'
       } fixed`}
     >
       <div className='mx-4 md:mx-16  w-full'>
@@ -26,7 +26,7 @@ const Navbar = () => {
                 )
               })}
             <button onClick={() => toggleDarkMode()}>
-              {darkMode ? <FaRegSun /> : <FaRegMoon />}
+              {darkMode === 'dark' ? <FaRegSun /> : <FaRegMoon />}
             </button>
           </ul>
         </nav>

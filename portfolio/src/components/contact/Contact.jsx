@@ -42,14 +42,14 @@ const Contact = () => {
             <input
               type='text'
               className={`${
-                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+                darkMode === 'dark' ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
               } p-2 md:w-1/2 w-full`}
               placeholder='Name'
             />
             <input
               type='email'
               className={`${
-                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+                darkMode === 'dark' ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
               } p-2 md:w-1/2 w-full`}
               placeholder='Email'
             />
@@ -61,7 +61,7 @@ const Contact = () => {
               cols='30'
               rows='4'
               className={`${
-                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+                darkMode === 'dark' ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
               } p-2 w-full`}
               placeholder='Project'
             ></textarea>
@@ -73,7 +73,7 @@ const Contact = () => {
               cols='30'
               rows='4'
               className={`${
-                darkMode ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
+                darkMode === 'dark' ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
               } p-2 w-full`}
               placeholder='message'
             ></textarea>

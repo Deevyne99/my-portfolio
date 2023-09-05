@@ -3,7 +3,10 @@
 const reducer = (state, action) => {
   if (action.type === 'SET_SLIDE') {
     if (state.portfolioIndex < 0) {
-      return { ...state, portfolioIndex: state.portfolio.length - 1 }
+      return {
+        ...state,
+        portfolioIndex: state.portfolio.length - 1,
+      }
     }
     if (state.portfolioIndex > state.portfolio.length - 1) {
       return { ...state, portfolioIndex: 0 }
@@ -29,7 +32,17 @@ const reducer = (state, action) => {
     return { ...state, isModalOpen: false }
   }
   if (action.type === 'TOGGLE_DARK_MODE') {
-    return { ...state, darkMode: !state.darkMode }
+    let darkMode
+    if (state.darkMode === 'light') {
+      darkMode = 'dark'
+      console.log(darkMode)
+      return { ...state, darkMode: darkMode }
+    }
+    if (state.darkMode === 'dark') {
+      darkMode = 'light'
+      return { ...state, darkMode: darkMode }
+    }
+    return { ...state, darkMode: darkMode }
   }
   throw new Error(`no action ${action.type}`)
 }

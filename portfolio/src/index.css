@@ -5,3 +5,6 @@
 .dark {
   @apply bg-[#001326] text-zinc-50;
 }
+.light {
+  @apply bg-[#fdfdfd] text-[#000];
+}

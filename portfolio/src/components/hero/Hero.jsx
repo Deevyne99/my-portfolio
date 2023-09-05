@@ -8,20 +8,21 @@ const Hero = () => {
     <section className='mx-4   md:mx-16 sm:mx-4 '>
       <div className='flex sm:my-12 justify-between lg:gap-16 sm:gap-8 '>
         <ul className='hidden sm:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
-          {social.map((link) => {
-            const { id, url, icon } = link
-            return (
-              <li key={id} className='hover:animate-bounce  '>
-                <a
-                  href={url}
-                  target='_blank'
-                  className='text-[#635FC7] text-2xl '
-                >
-                  {icon}
-                </a>
-              </li>
-            )
-          })}
+          {social &&
+            social.map((link) => {
+              const { id, url, icon } = link
+              return (
+                <li key={id} className='hover:animate-bounce  '>
+                  <a
+                    href={url}
+                    target='_blank'
+                    className='text-[#635FC7] text-2xl '
+                  >
+                    {icon}
+                  </a>
+                </li>
+              )
+            })}
         </ul>
         <div className='flex my-8 flex-col-reverse sm:flex-row items-center lg:justify-between justify-center mx-auto bg-red-30   w-full  '>
           <article className='flex flex-col gap-4 sm:gap-4 w-[100%] lg:w-[45%] '>
@@ -43,20 +44,21 @@ const Hero = () => {
           </article>
           <div className='flex lg:w-[40%] w-[100%] justify-center '>
             <ul className='sm:hidden  flex  absolute left-4  top-16 sm:top-28  gap-4 flex-col  '>
-              {social.map((link) => {
-                const { id, url, icon } = link
-                return (
-                  <li key={id} className=' hover:rotate-90'>
-                    <a
-                      href={url}
-                      target='_blank'
-                      className='text-[#635FC7] text-2xl '
-                    >
-                      {icon}
-                    </a>
-                  </li>
-                )
-              })}
+              {social &&
+                social.map((link) => {
+                  const { id, url, icon } = link
+                  return (
+                    <li key={id} className=' hover:rotate-90'>
+                      <a
+                        href={url}
+                        target='_blank'
+                        className='text-[#635FC7] text-2xl '
+                      >
+                        {icon}
+                      </a>
+                    </li>
+                  )
+                })}
             </ul>
             <div
               className=' rounded-b-full  rounded-t-full h-[180px] w-[180px]

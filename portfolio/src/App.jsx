@@ -12,9 +12,7 @@ import { useGlobalContext } from './hooks/context'
 const App = () => {
   const { toggleDarkMode, darkMode } = useGlobalContext()
   return (
-    <div
-      className={`relative bg-[#fdfdfd] ${darkMode ? 'dark' : 'bg-[#fdfdfd]'}`}
-    >
+    <div className='relative'>
       <Navbar />
       <Hero />
       <About />

@@ -25,7 +25,7 @@ const Services = () => {
             <div
               key={id}
               className={`flex flex-col w-3/4 mx-auto md:mx-0 md:w-1/2 lg:w-1/4 shadow-xl rounded-md  p-4 ${
-                darkMode ? 'bg-[#00162c]' : 'bg-[#fff]'
+                darkMode === 'dark' ? 'bg-[#00162c]' : 'bg-[#fff]'
               }`}
             >
               <div
@@ -42,7 +42,7 @@ const Services = () => {
               >
                 view more <FaArrowRightLong />
               </button>
-              {console.log(services)}
+              {/* {console.log(services)} */}
             </div>
           )
         })}

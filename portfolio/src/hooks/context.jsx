@@ -4,6 +4,14 @@ import { links } from '../data'
 import { social } from '../data'
 import { skills } from '../data'
 import { portfolio, services, expert } from '../data'
+const getStorageTheme = () => {
+  // let darkTheme = 'dark'
+  let darkMode = 'light'
+  if (localStorage.getItem('darkMode')) {
+    darkMode = localStorage.getItem('darkMode')
+  }
+  return darkMode
+}
 const initialState = {
   links: links,
   social: social,
@@ -12,13 +20,14 @@ const initialState = {
   services,
   portfolioIndex: 0,
   isModalOpen: false,
-  darkMode: false,
+  darkMode: getStorageTheme(),
   expert: [],
 }
 const lastIndex = portfolio.length - 1
 const AppContext = createContext()
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
+
   const nextEvent = () => {
     dispatch({ type: 'NEXT_SLIDE' })
   }
@@ -43,6 +52,11 @@ const AppProvider = ({ children }) => {
     }, 3000)
     return () => clearInterval(slider)
   }, [state.portfolioIndex])
+  useEffect(() => {
+    document.documentElement.className = state.darkMode
+    // console.log(state.darkMode)
+    localStorage.setItem('darkMode', state.darkMode)
+  }, [state.darkMode])
   return (
     <AppContext.Provider
       value={{
