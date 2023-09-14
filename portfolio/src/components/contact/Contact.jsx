@@ -8,14 +8,14 @@ const Contact = () => {
   const { darkMode } = useGlobalContext()
   return (
     <section
-      className='md:my-24 lg:my-28 my-16 mx-4 md:mx-16 lg:mx-24 '
+      className='md:my-24 lg:my-32 my-16 mx-4 md:mx-16 lg:mx-20 '
       id='contact'
     >
       <div className='text-center'>
         <h1 className='md:text-5xl text-3xl capitalize'>Contact me</h1>
         <h3 className='mt-4 sm:text-2xl text-lg capitalize'>Get in touch</h3>
       </div>
-      <div className='flex md:flex-row flex-col gap-12 lg:mx-32 mx-4 justify-center items-center mt-8'>
+      <div className='flex md:flex-row flex-col gap-12 lg:mx-20 mx-4 justify-center items-center mt-8'>
         <article className='flex flex-col gap-8 w-full   md:w-[40%]'>
           <div className='flex gap-4  items-center'>
             <BiPhoneCall className='text-3xl text-[#635FC7]' />

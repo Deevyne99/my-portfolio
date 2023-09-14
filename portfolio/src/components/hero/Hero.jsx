@@ -6,7 +6,7 @@ const Hero = () => {
   const { social } = useGlobalContext()
   return (
     <section className='mx-4   md:mx-16 sm:mx-4 ' id='hero'>
-      <div className='flex sm:my-12 justify-between lg:gap-16 sm:gap-8 '>
+      <div className='flex sm:my-12 lg:my-32 justify-between lg:gap-16 sm:gap-8 '>
         <ul className='hidden sm:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
           {social &&
             social.map((link) => {
