@@ -1,6 +1,15 @@
 // import React from 'react'
-import { useGlobalContext } from '../../hooks/context'
 import { FaRegMoon, FaRegSun } from 'react-icons/fa'
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll'
+import { useGlobalContext } from '../../hooks/context'
 const Navbar = () => {
   const { links, darkMode, toggleDarkMode } = useGlobalContext()
   // console.log(links)
@@ -19,9 +28,16 @@ const Navbar = () => {
                 const { id, name, url } = link
                 return (
                   <li key={id}>
-                    <a className='capitalize' href={url}>
+                    <Link
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                      className='capitalize'
+                      to={url}
+                    >
                       {name}
-                    </a>
+                    </Link>
                   </li>
                 )
               })}

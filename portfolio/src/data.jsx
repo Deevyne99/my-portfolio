@@ -13,32 +13,32 @@ export const links = [
   {
     id: 1,
     name: 'home',
-    url: '#home',
+    url: 'hero',
   },
   {
     id: 2,
     name: 'about',
-    url: '#about',
+    url: 'about',
   },
   {
     id: 3,
     name: 'skills',
-    url: '#skills',
+    url: 'skills',
   },
   {
     id: 4,
     name: 'services',
-    url: '#services',
+    url: 'services',
   },
   {
     id: 5,
     name: 'portfolio',
-    url: '#portfolio',
+    url: 'portfolio',
   },
   {
     id: 6,
     name: 'contact me',
-    url: '#contact me',
+    url: 'contact',
   },
 ]
 export const social = [

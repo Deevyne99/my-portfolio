@@ -5,7 +5,7 @@ import ProgressBar from '../progress bar/ProgressBar'
 const Skills = () => {
   const { skills } = useGlobalContext()
   return (
-    <section className='mx-4 md:mx-8 lg:mx-24 my-24'>
+    <section className='mx-4 md:mx-8 lg:mx-24 my-24' id='skills'>
       <div className='text-center'>
         <h1 className='md:text-5xl text-3xl'>Skills</h1>
         <h3 className='mt-4 sm:text-2xl text-lg capitalize'>

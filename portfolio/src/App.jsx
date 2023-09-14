@@ -10,7 +10,7 @@ import Footer from './components/footer/Footer'
 import { useGlobalContext } from './hooks/context'
 
 const App = () => {
-  const { toggleDarkMode, darkMode } = useGlobalContext()
+  // const { toggleDarkMode, darkMode } = useGlobalContext()
   return (
     <div className='relative'>
       <Navbar />
