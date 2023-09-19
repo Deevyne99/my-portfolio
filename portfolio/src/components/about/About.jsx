@@ -4,7 +4,7 @@ import { FaRegPaperPlane } from 'react-icons/fa'
 const About = () => {
   return (
     <section className='mx-4 md:mx-16 lg:mx-24  ' id='about'>
-      <div className='text-center my-20 '>
+      <div className='text-center my-4 '>
         <h1 className='md:text-5xl text-3xl'>About me</h1>
         <h3 className='mt-4 sm:text-2xl text-lg capitalize'>my introduction</h3>
         <article className='flex flex-col justify-center sm:flex-row sm:justify-between gap-4 sm:gap-6 md:gap-12 mx-4 mt-8 md:mt-16 lg:mx-24 md:mx-12 xl:mx-32'>

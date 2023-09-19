@@ -69,7 +69,7 @@ const Contact = () => {
               placeholder='Project'
             ></textarea>
           </div>
-          <div className='w-full'>
+          <div className='w-full '>
             <textarea
               name=''
               id=''
@@ -78,9 +78,10 @@ const Contact = () => {
               className={`${
                 darkMode === 'dark' ? 'bg-[#00162c]' : 'bg-[#f4f7fd]'
               } p-2 w-full`}
-              placeholder='message'
+              placeholder='Project'
             ></textarea>
           </div>
+
           <button className='p-4 mt-4 items-center rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-[#635FC7] w-[200px] mx-auto sm:mx-0 '>
             send message
             <FaRegPaperPlane />

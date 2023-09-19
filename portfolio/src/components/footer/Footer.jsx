@@ -1,8 +1,43 @@
+import React, { useState } from 'react'
 import { social } from '../../data'
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll'
+import { FaArrowCircleUp } from 'react-icons/fa'
 const Footer = () => {
+  const [show, setShow] = useState(true)
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop
+    if (scrolled > 500) {
+      setShow(true)
+    } else {
+      setShow(false)
+    }
+  }
+
+  window.addEventListener('scroll', toggleVisible)
   return (
     <footer className='bg-[#635fc7] flex h-[350px] md:h-[300px] mt-24'>
-      <div className='flex lg:flex-row flex-wrap w-full lg:mx-28 md:mx-16 mx-8 justify-between items-center'>
+      <Link
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+        className='capitalize'
+        to='hero'
+        className={`mt-0 md:mt-12 p-5 w-[30px] absolute right-8 md:right-12 lg:right-24 animate-bounce  right-24 ${
+          show ? 'visible' : 'invisible'
+        }`}
+      >
+        <FaArrowCircleUp className='text-3xl text-[#fff]' />
+      </Link>
+      <div className='flex  lg:flex-row flex-wrap w-full lg:mx-28 md:mx-16 mx-8 justify-between items-center'>
         <div className='text-[#fff] flex flex-col gap-4'>
           <h1 className='text-3xl capitalize font-bold'>Divine</h1>
           <h2 className='text-xl capitalize font-semibold'>

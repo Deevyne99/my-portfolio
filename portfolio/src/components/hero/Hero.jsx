@@ -1,12 +1,33 @@
-// import React from 'react'
+import React, { useState } from 'react'
 import { useGlobalContext } from '../../hooks/context'
-import { FaRegPaperPlane } from 'react-icons/fa'
+import { FaRegPaperPlane, FaArrowCircleDown } from 'react-icons/fa'
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll'
+// import {  } from 'react-icons/fa'
 // import image from '../../assets/div.jpeg'
 const Hero = () => {
+  const [visible, setVisible] = useState(true)
   const { social } = useGlobalContext()
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop
+    if (scrolled > 80) {
+      setVisible(false)
+    } else if (scrolled <= 80) {
+      setVisible(true)
+    }
+  }
+
+  window.addEventListener('scroll', toggleVisible)
   return (
     <section className='mx-4   md:mx-16 sm:mx-4 ' id='hero'>
-      <div className='flex sm:my-12 lg:my-32 justify-between lg:gap-16 sm:gap-8 '>
+      <div className='flex my-4 lg:my-32 justify-between lg:gap-16 sm:gap-8 '>
         <ul className='hidden sm:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
           {social &&
             social.map((link) => {
@@ -41,6 +62,19 @@ const Hero = () => {
             <button className='p-4 mt-4 items-center rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-[#635FC7] w-[150px] mx-auto sm:mx-0 '>
               contact me <FaRegPaperPlane />
             </button>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              className='capitalize'
+              to='about'
+              className={`mt-0 md:mt-12 p-5 w-[30px] animate-bounce ${
+                visible ? 'visible' : 'invisible'
+              }`}
+            >
+              <FaArrowCircleDown className='text-3xl text-[#635FC7]' />
+            </Link>
           </article>
           <div className='flex lg:w-[40%] w-[100%] justify-center '>
             <ul className='sm:hidden  flex  absolute left-4  top-16 sm:top-28  gap-4 flex-col  '>

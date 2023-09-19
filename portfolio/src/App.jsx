@@ -11,6 +11,7 @@ import { useGlobalContext } from './hooks/context'
 
 const App = () => {
   // const { toggleDarkMode, darkMode } = useGlobalContext()
+
   return (
     <div className='relative'>
       <Navbar />

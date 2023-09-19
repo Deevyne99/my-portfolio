@@ -11,11 +11,13 @@ import {
 } from 'react-scroll'
 import { useGlobalContext } from '../../hooks/context'
 const Navbar = () => {
-  const { links, darkMode, toggleDarkMode } = useGlobalContext()
+  const { links, darkMode, toggleDarkMode, isModalOpen } = useGlobalContext()
   // console.log(links)
   return (
     <header
-      className={`sm:flex z-10 top-0 left-0 right-0  hidden py-4 shadow-lg ${
+      className={`sm:flex  ${
+        isModalOpen ? 'z-0' : 'z-10'
+      } top-0 left-0 right-0  hidden py-4 shadow-lg ${
         darkMode === 'dark' ? 'bg-[#00162c]' : ' bg-white'
       } fixed`}
     >

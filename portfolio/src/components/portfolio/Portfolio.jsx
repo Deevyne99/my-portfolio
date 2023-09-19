@@ -1,7 +1,8 @@
 import { useGlobalContext } from '../../hooks/context'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 const Portfolio = () => {
-  const { portfolio, portfolioIndex, nextEvent, prevEvent } = useGlobalContext()
+  const { portfolio, portfolioIndex, nextEvent, prevEvent, isModalOpen } =
+    useGlobalContext()
   // console.log(portfolio)
   return (
     <section className='md:my-32  my-20 mx-8 md:mx-16 lg:mx-24 ' id='portfolio'>
