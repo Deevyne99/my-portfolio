@@ -44,6 +44,12 @@ const reducer = (state, action) => {
     }
     return { ...state, darkMode: darkMode }
   }
+  if (action.type === 'OPEN_MENU') {
+    return { ...state, isMenuOpen: true }
+  }
+  if (action.type === 'CLOSE_MENU') {
+    return { ...state, isMenuOpen: false }
+  }
   throw new Error(`no action ${action.type}`)
 }
 export default reducer

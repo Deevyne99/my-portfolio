@@ -65,7 +65,7 @@ const Hero = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={-10}
+              offset={-100}
               duration={500}
               className='capitalize'
               to='about'

@@ -8,6 +8,7 @@ import Services from './components/services/Services'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import { useGlobalContext } from './hooks/context'
+import Menu from './components/menu/Menu'
 
 const App = () => {
   // const { toggleDarkMode, darkMode } = useGlobalContext()
@@ -21,6 +22,7 @@ const App = () => {
       <Services />
       <Portfolio />
       <Contact />
+      <Menu></Menu>
       <Footer />
     </div>
   )

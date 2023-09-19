@@ -7,38 +7,50 @@ import {
   FaTwitter,
   FaDatabase,
   FaCode,
+  FaHome,
+  FaRegPaperPlane,
+  FaRegNewspaper,
 } from 'react-icons/fa'
-
+// import { IoPersonOutline } from 'react-icons/io'
+import { MdWorkOutline } from 'react-icons/md'
+import { AiOutlinePicture } from 'react-icons/ai'
+import { BsPerson } from 'react-icons/bs'
 export const links = [
   {
     id: 1,
     name: 'home',
     url: 'hero',
+    icon: <FaHome />,
   },
   {
     id: 2,
     name: 'about',
     url: 'about',
+    icon: <BsPerson />,
   },
   {
     id: 3,
     name: 'skills',
     url: 'skills',
+    icon: <FaRegNewspaper />,
   },
   {
     id: 4,
     name: 'services',
     url: 'services',
+    icon: <MdWorkOutline />,
   },
   {
     id: 5,
     name: 'portfolio',
     url: 'portfolio',
+    icon: <AiOutlinePicture />,
   },
   {
     id: 6,
-    name: 'contact me',
+    name: 'contact ',
     url: 'contact',
+    icon: <FaRegPaperPlane />,
   },
 ]
 export const social = [

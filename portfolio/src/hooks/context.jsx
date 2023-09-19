@@ -22,6 +22,7 @@ const initialState = {
   isModalOpen: false,
   darkMode: getStorageTheme(),
   expert: [],
+  isMenuOpen: false,
 }
 const lastIndex = portfolio.length - 1
 const AppContext = createContext()
@@ -42,6 +43,12 @@ const AppProvider = ({ children }) => {
   }
   const toggleDarkMode = () => {
     dispatch({ type: 'TOGGLE_DARK_MODE' })
+  }
+  const openMenu = () => {
+    dispatch({ type: 'OPEN_MENU' })
+  }
+  const closeMenu = () => {
+    dispatch({ type: 'CLOSE_MENU' })
   }
   useEffect(() => {
     dispatch({ type: 'SET_SLIDE', payload: lastIndex })
@@ -66,6 +73,8 @@ const AppProvider = ({ children }) => {
         openModal,
         closeModal,
         toggleDarkMode,
+        openMenu,
+        closeMenu,
       }}
     >
       {children}
