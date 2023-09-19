@@ -10,8 +10,7 @@ import {
   scrollSpy,
   scroller,
 } from 'react-scroll'
-// import {  } from 'react-icons/fa'
-// import image from '../../assets/div.jpeg'
+
 const Hero = () => {
   const [visible, setVisible] = useState(true)
   const { social } = useGlobalContext()
@@ -98,9 +97,7 @@ const Hero = () => {
               className=' rounded-b-full  rounded-t-full h-[180px] w-[180px]
               sm:h-[210px] sm:w-[210px] 
             md:h-[240px] md:w-[240px]   bg-hero lg:h-[300px] lg:w-[300px] xl:h-[320px] xl:w-[320px] bg-center bg-cover'
-            >
-              {/* <img className='' src={image} alt='' /> */}
-            </div>
+            ></div>
           </div>
         </div>
       </div>
