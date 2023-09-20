@@ -26,7 +26,7 @@ const Hero = () => {
   window.addEventListener('scroll', toggleVisible)
   return (
     <section className='mx-4   md:mx-16 sm:mx-4 ' id='hero'>
-      <div className='flex my-4 lg:my-32 justify-between lg:gap-16 sm:gap-8 '>
+      <div className='flex my-4 lg:my-24 justify-between lg:gap-16 sm:gap-8 '>
         <ul className='hidden sm:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
           {social &&
             social.map((link) => {
@@ -52,11 +52,12 @@ const Hero = () => {
             <h3 className='lg:text-3xl tracking-wide leading-6 text-xl sm:text-2xl text-center sm:text-left'>
               Frontend developer
             </h3>
-            <p className='sm:text-md md:text-md tracking-wide leading-6 text-sm sm:text-left text-center'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-              harum perspiciatis et minima rerum facilis quia. Possimus
-              praesentium laudantium vitae dolor nisi harum quia porro quaerat
-              doloribus. Aperiam, voluptate ipsa.
+            <p className='sm:text-md md:text-md tracking-wide leading-8 text-sm sm:text-left text-center'>
+              As a passionate and detail-oriented Frontend Developer with a
+              strong foundation in crafting captivating user interfaces for the
+              digital world. With a keen eye for design and a love for clean,
+              efficient code, I am dedicated to turning creative concepts into
+              functional, user-friendly web experiences.
             </p>
             <button className='p-4 mt-4 items-center rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-[#635FC7] w-[150px] mx-auto sm:mx-0 '>
               contact me <FaRegPaperPlane />

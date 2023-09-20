@@ -10,12 +10,14 @@ const About = () => {
         <article className='flex flex-col justify-center sm:flex-row sm:justify-between gap-4 sm:gap-6 md:gap-12 mx-4 mt-8 md:mt-16 lg:mx-24 md:mx-12 xl:mx-32'>
           <div className='bg-hero bg-center bg-cover bg-no-repeat w-full  sm:w-[400px] h-[250px] rounded-md '></div>
           <div className='flex  justify-center items-center  flex-col gap-8 sm:gap-8 lg:gap-8 '>
-            <p className='max-w-md tracking-wide leading-6 sm:text-md md:text-md text-sm sm:text-left'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              assumenda quaerat quo reprehenderit ut quia voluptates modi
-              perferendis, quos eaque. Laboriosam, magni repellendus quo dolorem
-              adipisci officia! Facilis incidunt vel et, veniam maxime quos
-              sunt.
+            <p className='max-w-md tracking-wide leading-8 sm:text-md md:text-md text-sm sm:text-left'>
+              My journey in web development has equipped me with the skills to
+              bridge the gap between design and functionality, resulting in
+              websites and applications that not only look great but also
+              perform seamlessly across various devices and browsers. I thrive
+              on staying at the forefront of frontend technologies and best
+              practices, ensuring that I can deliver the best possible user
+              experiences while helping businesses achieve their digital goals.
             </p>
             <div className='flex justify-between w-full tracking-wide sm:text-md md:text-md text-sm leading-6  text-center'>
               <div className='flex flex-col gap-2'>

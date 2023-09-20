@@ -50,7 +50,7 @@ const Menu = () => {
                 className='capitalize'
                 to={url}
                 onClick={closeMenu}
-                className='flex flex-col justify-center items-center'
+                className='flex flex-col justify-center items-center capitalize'
               >
                 {icon}
                 {name}
