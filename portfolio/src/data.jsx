@@ -81,70 +81,15 @@ export const social = [
 ]
 
 export const skills = [
-  {
-    id: 1,
-    icon: <FaCode />,
-    skill: 'frontend developer',
-    levels: [
-      {
-        id: 1,
-        skill: 'Html',
-        level: 90,
-      },
-      {
-        id: 2,
-        skill: 'Css',
-        level: 90,
-      },
-      {
-        id: 3,
-        skill: 'Javascript',
-        level: 85,
-      },
-      {
-        id: 4,
-        skill: 'React',
-        level: 90,
-      },
-      {
-        id: 5,
-        skill: 'Tailwind Css',
-        level: 90,
-      },
-    ],
-  },
-  {
-    id: 2,
-    icon: <FaDatabase />,
-    skill: 'backend developer',
-    levels: [
-      {
-        id: 1,
-        skill: 'Node js',
-        level: 60,
-      },
-      {
-        id: 2,
-        skill: 'Express js',
-        level: 70,
-      },
-      {
-        id: 3,
-        skill: 'Mongo DB',
-        level: 50,
-      },
-      {
-        id: 4,
-        skill: 'Postman',
-        level: 80,
-      },
-      {
-        id: 5,
-        skill: 'Postman',
-        level: 70,
-      },
-    ],
-  },
+  { id: 1, name: 'Html' },
+  { id: 2, name: 'css' },
+  { id: 3, name: 'javascript' },
+  { id: 4, name: 'React Js' },
+  { id: 5, name: 'Tailwind Css' },
+  { id: 6, name: 'Styled component' },
+  { id: 7, name: 'Node Js' },
+  { id: 8, name: 'git' },
+  { id: 9, name: 'express Js' },
 ]
 
 export const portfolio = [

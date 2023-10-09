@@ -10,7 +10,7 @@ const About = () => {
         <article className='flex flex-col justify-center sm:flex-row sm:justify-between gap-4 sm:gap-6 md:gap-12 mx-4 mt-8 md:mt-16 lg:mx-24 md:mx-12 xl:mx-32'>
           <div className='bg-hero bg-center bg-cover bg-no-repeat w-full  sm:w-[400px] h-[250px] rounded-md '></div>
           <div className='flex  justify-center items-center  flex-col gap-8 sm:gap-8 lg:gap-8 '>
-            <p className='max-w-md tracking-wide leading-8 sm:text-md md:text-md text-sm sm:text-left'>
+            <p className='max-w-md tracking-wide leading-8  sm:text-md md:text-md text-sm sm:text-left'>
               My journey in web development has equipped me with the skills to
               bridge the gap between design and functionality, resulting in
               websites and applications that not only look great but also
