@@ -97,7 +97,7 @@ export const portfolio = [
     id: 1,
     title: 'Country API',
     image: '/assets/country-api.png',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    desc: `Presenting the Country API Project, a robust and comprehensive database of countries and their essential data, crafted from scratch with meticulous attention to detail. This powerful API provides developers with easy access to a wealth of information.`,
     url: 'https://delightful-marigold-c5f6b1.netlify.app/',
     git: 'https://github.com/Deevyne99/country-api',
   },
@@ -105,7 +105,7 @@ export const portfolio = [
     id: 2,
     title: 'Audiophoile Ecommerce',
     image: '/assets/audiophoile.png',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    desc: `Welcome to SoundCrafters, the audiophile's paradise. As the creator of this bespoke audiophile ecommerce store, I've meticulously crafted every detail to deliver an unparalleled audio shopping experience.`,
     url: 'https://loquacious-buttercream-b05131.netlify.app',
     git: 'https://github.com/Deevyne99/audiophile-Ecommerce',
   },
@@ -113,7 +113,7 @@ export const portfolio = [
     id: 3,
     title: 'myteam Multipage',
     image: '/assets/multipage.png',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    desc: `Introducing our fully responsive landing page, meticulously designed and built from scratch to captivate and engage your audience on any device. Seamlessly adapting to desktops, tablets, and mobile screens, our landing page ensures a flawless user experience.`,
     url: 'https://magnificent-starship-ff5be4.netlify.app/',
     git: 'https://github.com/Deevyne99/myTeam-multipage',
   },
@@ -130,12 +130,12 @@ export const portfolio = [
 export const services = [
   {
     id: 1,
-    position: 'frontend developer',
+    position: 'Frontend developer',
     icon: <FaCode />,
   },
   {
     id: 2,
-    position: 'frontend developer',
+    position: 'Backend developer',
     icon: <FaDatabase />,
   },
 ]
@@ -154,11 +154,11 @@ export const expert = [
   {
     id: 2,
     service: [
-      'User Interface (UI) Development',
-      'Responsive Web Design',
-      'Interactive Elements',
-      'Performance Optimization',
-      'Cross-Browser ',
+      'Database Management',
+      'API Development',
+      'Server Management',
+      'Security',
+      'Version Control',
     ],
   },
 ]
