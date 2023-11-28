@@ -50,14 +50,15 @@ const Hero = () => {
               Hi,I am Divine
             </h1>
             <h3 className='lg:text-3xl tracking-wide leading-6 text-xl sm:text-2xl text-center sm:text-left'>
-              Frontend developer
+              Full stack developer
             </h3>
             <p className='sm:text-md md:text-md tracking-wide leading-8 text-sm sm:text-left text-center'>
-              As a passionate and detail-oriented Frontend Developer with a
-              strong foundation in crafting captivating user interfaces for the
-              digital world. With a keen eye for design and a love for clean,
-              efficient code, I am dedicated to turning creative concepts into
-              functional, user-friendly web experiences.
+              I specialize in React, Tailwind CSS, Express.js, MongoDB,
+              TypeScript, and Git. As a Full Stack Developer, I combine
+              creativity and technical expertise to build engaging user
+              interfaces and scalable backend solutions. I am passionate about
+              staying at the forefront of technology and am ready to contribute
+              my skills to drive your projects to success.
             </p>
             <button className='p-4 mt-4 items-center rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-[#635FC7] w-[150px] mx-auto sm:mx-0 '>
               contact me <FaRegPaperPlane />
