@@ -15,9 +15,9 @@ const About = () => {
               bridge the gap between design and functionality, resulting in
               websites and applications that not only look great but also
               perform seamlessly across various devices and browsers. I thrive
-              on staying at the forefront of frontend technologies and best
-              practices, ensuring that I can deliver the best possible user
-              experiences while helping businesses achieve their digital goals.
+              on staying at the forefront of technologies and best practices,
+              ensuring that I can deliver the best possible user experiences
+              while helping businesses achieve their digital goals.
             </p>
             <div className='flex justify-between w-full tracking-wide sm:text-md md:text-md text-sm leading-6  text-center'>
               <div className='flex flex-col gap-2'>
