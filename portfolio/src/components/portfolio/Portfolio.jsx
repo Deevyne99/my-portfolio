@@ -9,7 +9,7 @@ const Portfolio = () => {
       <div className='flex flex-col justify-center items-center relative'>
         <h2 className='md:text-5xl text-3xl'>Portfolio</h2>
         <p className='mt-4 sm:text-2xl text-lg capitalize'>my recent works</p>
-        <article className='flex relative w-full overflow-hidden  mx-auto h-[425px] sm:h-[520px] md:h-[320px] '>
+        <article className='flex relative w-full overflow-hidden  mx-auto h-[470px] sm:h-[500px] md:h-[320px] '>
           {portfolio &&
             portfolio.map((item, index) => {
               const { id, url, title, image, git, desc } = item
