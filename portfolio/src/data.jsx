@@ -90,6 +90,8 @@ export const skills = [
   { id: 7, name: 'Node Js' },
   { id: 8, name: 'git' },
   { id: 9, name: 'express Js' },
+  { id: 10, name: 'Typescript' },
+  { id: 11, name: 'Next Js' },
 ]
 
 export const portfolio = [
@@ -106,7 +108,7 @@ export const portfolio = [
     title: 'Audiophoile Ecommerce',
     image: '/assets/audiophoile.png',
     desc: `Welcome to SoundCrafters, the audiophile's paradise. As the creator of this bespoke audiophile ecommerce store, I've meticulously crafted every detail to deliver an unparalleled audio shopping experience.`,
-    url: 'https://loquacious-buttercream-b05131.netlify.app',
+    url: 'https://relaxed-platypus-e8dd1e.netlify.app/',
     git: 'https://github.com/Deevyne99/audiophile-Ecommerce',
   },
   {
