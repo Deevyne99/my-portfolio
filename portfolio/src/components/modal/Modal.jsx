@@ -8,9 +8,9 @@ const Modal = () => {
 
   return (
     <div
-      className={`w-lg rounded-md flex-col absolute justify-center items-center flex top-[50%] sm:top-[40%] md:top-[45%] lg:top-[48%] left-0 right-0 mx-auto my-auto z-200 ${
+      className={`w-lg rounded-md flex-col fixed  justify-center items-center flex top-[25%] left-0 right-0 mx-auto my-auto z-10 ${
         darkMode === 'light' ? 'light' : 'dark'
-      } bg-[#fff] w-[280px] xs:w-[300px] sm:w-[450px] p-4 pb-12 gap-4 `}
+      } bg-[#fff] w-[280px] xs:w-[300px] sm:w-[400px] p-4 pb-12 gap-4 `}
     >
       <button
         className='ml-auto text-2xl text-[#635FC7]'

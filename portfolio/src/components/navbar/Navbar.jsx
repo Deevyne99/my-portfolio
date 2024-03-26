@@ -1,14 +1,6 @@
 // import React from 'react'
 import { FaRegMoon, FaRegSun } from 'react-icons/fa'
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll'
+import { Link } from 'react-scroll'
 import { useGlobalContext } from '../../hooks/context'
 const Navbar = () => {
   const { links, darkMode, toggleDarkMode, isModalOpen } = useGlobalContext()

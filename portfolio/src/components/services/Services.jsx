@@ -7,9 +7,9 @@ const Services = () => {
   const { services, isModalOpen, openModal, darkMode } = useGlobalContext()
   // console.log(services)
   return (
-    <section className='my-24 mx-4 lg:mx-24 md:mx-16 ' id='services'>
+    <section className=' my-24 mx-4 lg:mx-24 md:mx-16 ' id='services'>
       {isModalOpen && (
-        <div className='fixed lg:absolute bg-[rgb(0,0,0)] top-0 left-0 w-full  h-full bg-opacity-50'></div>
+        <div className='fixed z-10 bg-[rgb(0,0,0)] top-0  left-0 w-full  h-full bg-opacity-50'></div>
       )}
       <div className='text-center'>
         <h1 className='md:text-5xl text-3xl'>Services</h1>

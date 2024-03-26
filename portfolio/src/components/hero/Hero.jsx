@@ -1,15 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useGlobalContext } from '../../hooks/context'
 import { FaRegPaperPlane, FaArrowCircleDown } from 'react-icons/fa'
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const Hero = () => {
   const [visible, setVisible] = useState(true)
@@ -26,7 +18,7 @@ const Hero = () => {
   window.addEventListener('scroll', toggleVisible)
   return (
     <section className='mx-4   md:mx-16 sm:mx-4 ' id='hero'>
-      <div className='flex my-4 lg:my-24 justify-between lg:gap-16 sm:gap-8 '>
+      <div className='flex py-4 md:py-24 lg:py-24 justify-between lg:gap-16 sm:gap-8 '>
         <ul className='hidden sm:flex  sm:relative  fixed top-16  gap-4 flex-col  lg:my-36 '>
           {social &&
             social.map((link) => {
@@ -37,6 +29,7 @@ const Hero = () => {
                     href={url}
                     target='_blank'
                     className='text-[#635FC7] text-2xl '
+                    rel='noreferrer'
                   >
                     {icon}
                   </a>
@@ -68,9 +61,8 @@ const Hero = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className='capitalize'
               to='about'
-              className={`mt-0 md:mt-12 p-5 w-[30px] animate-bounce ${
+              className={`mt-0 md:mt-12 capitalize p-5 w-[30px] animate-bounce ${
                 visible ? 'visible' : 'invisible'
               }`}
             >
@@ -88,6 +80,7 @@ const Hero = () => {
                         href={url}
                         target='_blank'
                         className='text-[#635FC7] text-2xl '
+                        rel='noreferrer'
                       >
                         {icon}
                       </a>

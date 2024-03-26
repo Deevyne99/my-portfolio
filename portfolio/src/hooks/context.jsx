@@ -50,18 +50,20 @@ const AppProvider = ({ children }) => {
   const closeMenu = () => {
     dispatch({ type: 'CLOSE_MENU' })
   }
+
   useEffect(() => {
     dispatch({ type: 'SET_SLIDE', payload: lastIndex })
   }, [state.portfolioIndex, state.portfolio])
+
   useEffect(() => {
     let slider = setInterval(() => {
       dispatch({ type: 'AUTO_SLIDE' })
     }, 3000)
     return () => clearInterval(slider)
   }, [state.portfolioIndex])
+
   useEffect(() => {
     document.documentElement.className = state.darkMode
-    // console.log(state.darkMode)
     localStorage.setItem('darkMode', state.darkMode)
   }, [state.darkMode])
   return (
