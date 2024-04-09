@@ -121,11 +121,11 @@ export const portfolio = [
   },
   {
     id: 4,
-    title: 'Task Management',
-    image: '/assets/task.png',
+    title: 'Kanban Task Management',
+    image: '/assets/kanban.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
-    url: 'https://ubiquitous-truffle-d84ec3.netlify.app',
-    git: 'https://github.com/Deevyne99/NUPAT-TASK-2',
+    url: 'https://kanban-task-management-app-v2.netlify.app/',
+    git: 'https://github.com/Deevyne99/kanban-task-management',
   },
 ]
 

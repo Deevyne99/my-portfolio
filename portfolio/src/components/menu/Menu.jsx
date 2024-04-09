@@ -1,14 +1,6 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import { useGlobalContext } from '../../hooks/context'
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll'
+import { Link } from 'react-scroll'
 import { BiSolidGridAlt } from 'react-icons/bi'
 import { FaRegSun, FaRegMoon } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -47,7 +39,6 @@ const Menu = () => {
                 smooth={true}
                 offset={-10}
                 duration={500}
-                className='capitalize'
                 to={url}
                 onClick={closeMenu}
                 className='flex flex-col justify-center items-center capitalize'
