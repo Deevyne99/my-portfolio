@@ -123,7 +123,7 @@ export const portfolio = [
     id: 4,
     title: 'Kanban Task Management',
     image: '/assets/kanban.png',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quos voluptatibus autem inventore dolorem deserunt eveniet aperiam sit recusandae cumque.',
+    desc: 'Developed a full-stack MERN task management system with a responsive design. Key features include secure user authentication, light and dark modes for enhanced usability. The system ensures efficient project organization and task tracking, making it a powerful tool for boosting productivity across all devices.',
     url: 'https://kanban-task-management-app-v2.netlify.app/',
     git: 'https://github.com/Deevyne99/kanban-task-management',
   },
