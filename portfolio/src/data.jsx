@@ -128,10 +128,10 @@ export const portfolio = [
     git: 'https://github.com/Deevyne99/kanban-task-management',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Dee Store Ecommerce',
     image: '/assets/dee-store.png',
-    desc: 'Built a Full-Stack E-commerce Application using React.js, TypeScript, Redux Toolkit, Node.js, Express.js, and MongoDB. The app features dynamic product listings, category-based filtering, pagination, secure user authentication, and a seamless shopping cart and checkout experience. It’s fully responsive, ensuring an excellent user experience across devices. This project showcases my skills in building scalable, modern web applications with a strong integration between frontend and backend technologies.',
+    desc: 'Built a Full-Stack E-commerce Application using React.js, TypeScript, Redux Toolkit, Node.js, Express.js, and MongoDB. The app features dynamic product listings, category-based filtering, pagination, secure user authentication, and a seamless shopping cart and checkout experience. ',
     url: ' https://dee-stores.netlify.app/',
     git: 'https://github.com/Deevyne99/Ecommerce-project',
   },
