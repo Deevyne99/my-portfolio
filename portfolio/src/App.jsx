@@ -1,14 +1,17 @@
 // import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
 import About from './components/about/About'
-import Skills from './components/skills/Skills'
 import Portfolio from './components/portfolio/Portfolio'
-import Services from './components/services/Services'
+
+import ProjectsPage from './components/Pages/ProjectsPage'
+
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import { useGlobalContext } from './hooks/context'
-import Menu from './components/menu/Menu'
+import Blog from './components/blog/Blog'
+// import { useGlobalContext } from './hooks/context
+// import Menu from './components/menu/Menu'
 
 const App = () => {
   // const { toggleDarkMode, darkMode } = useGlobalContext()
@@ -16,13 +19,25 @@ const App = () => {
   return (
     <div className='relative'>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Services />
-      <Portfolio />
-      <Contact />
-      <Menu></Menu>
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <Hero />
+              <About />
+              {/* <Skills /> */}
+              {/* <Services /> */}
+              <Portfolio />
+              {/* <Contact /> */}
+            </>
+          }
+        />
+        <Route path='/projects' element={<ProjectsPage />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+      {/* <Menu></Menu> */}
       <Footer />
     </div>
   )

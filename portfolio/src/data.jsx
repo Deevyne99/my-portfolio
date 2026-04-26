@@ -172,3 +172,10 @@ export const expert = [
     ],
   },
 ]
+
+export const navItems = [
+  { id: 1, name: 'home', url: '/' },
+  { id: 2, name: 'projects', url: '/projects' },
+  { id: 3, name: 'blog', url: '/blog' },
+  { id: 5, name: 'contact', url: '/contact' },
+]

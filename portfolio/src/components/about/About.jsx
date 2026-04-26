@@ -1,49 +1,55 @@
-// import React from 'react'
-// import image from '../../assets/div.jpeg'
-import { FaRegPaperPlane } from 'react-icons/fa'
+import { Link } from 'react-scroll'
+import image from '../../../src/assests/div.jpeg'
+
 const About = () => {
   return (
-    <section className='mx-4 md:mx-16 lg:mx-24  ' id='about'>
-      <div className='text-center my-4 '>
-        <h1 className='md:text-5xl text-3xl'>About me</h1>
-        <h3 className='mt-4 sm:text-2xl text-lg capitalize'>my introduction</h3>
-        <article className='flex flex-col justify-center sm:flex-row sm:justify-between gap-4 sm:gap-6 md:gap-12 mx-4 mt-8 md:mt-16 lg:mx-24 md:mx-12 xl:mx-32'>
-          <div className='bg-hero bg-center bg-cover bg-no-repeat w-full  sm:w-[400px] h-[250px] rounded-md '></div>
-          <div className='flex  justify-center items-center  flex-col gap-8 sm:gap-8 lg:gap-8 '>
-            <p className='max-w-md tracking-wide leading-8  sm:text-md md:text-md text-sm sm:text-left'>
-              My journey in web development has equipped me with the skills to
-              bridge the gap between design and functionality, resulting in
-              websites and applications that not only look great but also
-              perform seamlessly across various devices and browsers. I thrive
-              on staying at the forefront of technologies and best practices,
-              ensuring that I can deliver the best possible user experiences
-              while helping businesses achieve their digital goals.
+    <section id='about' className='bg-[#0a0a0a] py-20 px-6 md:px-16'>
+      <div className='flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 max-w-5xl mx-auto'>
+        {/* LEFT — Portrait photo, fixed size, no absolute positioning */}
+        <div className='flex-shrink-0 w-[280px] md:w-[340px]'>
+          <img
+            src={image}
+            alt='portrait'
+            className='w-full h-[380px] md:h-[460px] object-cover object-top'
+          />
+        </div>
+
+        {/* RIGHT — Text content */}
+        <div className='flex flex-col justify-center max-w-lg'>
+          {/* Violet accent line */}
+          <div className='w-10 h-[3px] bg-violet-600 mb-7' />
+
+          {/* Paragraph */}
+          <p className='text-[14px] leading-[1.85] text-[#888] font-light mb-8'>
+            I build clean, scalable interfaces and love the craft of turning
+            complex problems into simple, beautiful experiences. My work spans
+            design systems, full-stack products, and everything in between —
+            always built with precision and a strong eye for detail.
+          </p>
+
+          {/* Name + title */}
+          <div className='mb-8'>
+            <p className='text-white font-semibold text-[14px] tracking-wide'>
+              Your Name
             </p>
-            <div className='flex justify-between w-full tracking-wide sm:text-md md:text-md text-sm leading-6  text-center'>
-              <div className='flex flex-col gap-2'>
-                <h2 className='text-3xl font-bold text-center'>02+</h2>
-                <p className='text-center'>
-                  years <br /> experience
-                </p>
-              </div>
-              <div className='flex flex-col gap-2'>
-                <h2 className='text-3xl font-bold'>20+</h2>
-                <p>
-                  Projects <br /> completed
-                </p>
-              </div>
-              <div className='flex flex-col gap-2'>
-                <h2 className='text-3xl font-bold'>02+</h2>
-                <p>
-                  years <br /> experience
-                </p>
-              </div>
-            </div>
-            <button className='p-4  items-center sm:mr-auto rounded-md capitalize justify-center font-bold flex gap-2 text-white bg-[#635FC7] w-[150px]'>
-              contact me <FaRegPaperPlane />
-            </button>
+            <p className='text-[#555] text-[12px] tracking-widest uppercase mt-1'>
+              Software Engineer
+            </p>
           </div>
-        </article>
+
+          {/* CTA */}
+          <Link
+            to='contact'
+            smooth
+            duration={500}
+            className='inline-flex items-center gap-3 text-[13px] text-white tracking-wide cursor-pointer group w-fit'
+          >
+            Get in touch
+            <span className='w-7 h-7 bg-violet-700 flex items-center justify-center text-sm flex-shrink-0 transition-transform group-hover:translate-x-1'>
+              ›
+            </span>
+          </Link>
+        </div>
       </div>
     </section>
   )
